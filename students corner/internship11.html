@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+}
+nav {
+   overflow: hidden;
+   background-color: rgb(0, 52, 73);
+}
+nav .links {
+   float: left;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+.subnav {
+   float: left;
+   overflow: hidden;
+}
+.subnav .sub-btn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: rgb(0, 109, 67);
+   margin: 0;
+}
+nav .links:hover,
+.subnav:hover .sub-btn {
+   background-color: rgb(101, 219, 255);
+   color: black;
+   font-weight: bolder;
+}
+.sub-content {
+   display: none;
+   position: absolute;
+   left: 0;
+   background-color: rgb(0, 156, 83);
+   width: 100%;
+   z-index: 1;
+}
+.sub-content a {
+   float: left;
+   color: white;
+   text-decoration: none;
+}
+.sub-content a:hover {
+   background-color: #eee;
+   color: black;
+}
+.subnav:hover .sub-content {
+   display: block;
+}
+</style>
+</head>
+<body>
+<nav>
+<!-- <a class="links" href="#">Home</a>
+<a class="links" href="#">Contact</a>
+<a class="links" href="#">About Us</a>
+<a class="links" href="#">detail</a> -->
+<div class="subnav">
+<button class="sub-btn">Student Corner>></button>
+<div class="sub-content">
+<a class="links" href="welfare.html">Students Welfare</a>
+<a class="links" href="facilities.html">Facilities</a>
+<a class="links" href="nss.html">NSS Activity</a>
+</div>
+</div>
+</nav>
+</body>
+</html>
